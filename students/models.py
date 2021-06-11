@@ -6,3 +6,4 @@ class Student(models.Model) :
     last_name = models.CharField(max_length=80 , null=False)
     age = models.IntegerField(default=42)
 
+
