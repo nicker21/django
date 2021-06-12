@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from students.views import hello
+
+from Group.views import get_groups
+from students.views import hello, get_students
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', hello)
+    path('hello/', hello),
+    path('students/', get_students),
+    path('get_groups/', get_groups),
 
 ]
