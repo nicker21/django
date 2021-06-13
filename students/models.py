@@ -14,6 +14,7 @@ class Student(models.Model) :
     birthdate = models.DateField(default=datetime.date.today)
 
     def __str__(self):
+
         return f'{self.full_name()}, {self.birthdate}'
 
     def full_name(self):

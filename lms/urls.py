@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Group.views import get_groups
+from groups.views import get_groups
 from students.views import hello, get_students
 
 urlpatterns = [

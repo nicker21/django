@@ -26,9 +26,8 @@ def hello(request):
     location="query"
 )
 
-def get_students(request):
+def get_students(request, args):
     students = Student.objects.all()
     records = format_records(students)
-
 
     return HttpResponse(records)
