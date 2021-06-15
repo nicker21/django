@@ -19,3 +19,4 @@ class Group(models.Model) :
             )
 
             st.save()
+
