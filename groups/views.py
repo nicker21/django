@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from Group.models import Group
+from groups.models import Group
 
 from students.utils import format_records
 from django.http import HttpResponse
